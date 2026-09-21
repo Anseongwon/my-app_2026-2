@@ -1,5 +1,5 @@
-import { Counter } from '@/components/counter'
 import Link from 'next/link'
+import { Counter } from '@/components/counter'
 
 export default function Home() {
   return (
@@ -15,6 +15,13 @@ export default function Home() {
         >
           {' '}
           /about 페이지로 이동하기{' '}
+        </Link>
+        <Link
+          className="text-sm font-medium text-zinc-950 underline underline-offset-4 dark:text-zinc-50"
+          href="/products"
+        >
+          {' '}
+          /products 페이지로 이동하기{' '}
         </Link>
       </main>
     </div>
